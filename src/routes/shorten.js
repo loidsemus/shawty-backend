@@ -27,6 +27,7 @@ router.post("/", async (req, res) => {
         res.json({ shortened: shortened })
     } catch (e) {
         // Internal server error
+        console.log(e)
         res.sendStatus(500)
     }
 })
